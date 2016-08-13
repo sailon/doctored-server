@@ -1,0 +1,718 @@
+{  
+   "11X":{  
+      "Description":"Room and Board- Private (Medical or General)",
+      "110":"General",
+      "111":"Medical/Surgical/Gyn",
+      "112":"OB",
+      "113":"Pediatric",
+      "114":"Psychiatric",
+      "115":"Hospice",
+      "116":"Detoxification",
+      "117":"Oncology",
+      "118":"Rehabilitation",
+      "119":"Other"
+   },
+   "12x":{  
+      "Description":"Room and Board-Semi-Private Two Bed (Medical or General)",
+      "120":"General",
+      "121":"Medical/Surgical/Gyn",
+      "122":"OB",
+      "123":"Pediatric",
+      "124":"Psychiatric",
+      "125":"Hospice",
+      "126":"Detoxification",
+      "127":"Oncology",
+      "128":"Rehabilitation",
+      "129":"Other"
+   },
+   "13x":{  
+      "Description":"Semi-Private- Three and Four Beds",
+      "130":"General",
+      "131":"Medical/Surgical/Gyn",
+      "132":"OB",
+      "133":"Pediatric",
+      "134":"Psychiatric",
+      "135":"Hospice",
+      "136":"Detoxification",
+      "137":"Oncology",
+      "138":"Rehabilitation",
+      "139":"Other"
+   },
+   "14x":{  
+      "Description":"Private (Delux)",
+      "140":"General",
+      "141":"Medical/Surgical/Gyn",
+      "142":"OB",
+      "143":"Pediatric",
+      "144":"Psychiatric",
+      "145":"Hospice",
+      "146":"Detoxification",
+      "147":"Oncology",
+      "148":"Rehabilitation",
+      "149":"Other"
+   },
+   "15x":{  
+      "Description":"Room and Board Ward (Medical or General)",
+      "150":"General",
+      "151":"Medical/Surgical/Gyn",
+      "152":"OB",
+      "153":"Pediatric",
+      "154":"Psychiatric",
+      "155":"Hospice",
+      "156":"Detoxification",
+      "157":"Oncology",
+      "158":"Rehabilitation",
+      "159":"Other"
+   },
+   "16x":{  
+      "Description":"Other Room and Board",
+      "160":"General",
+      "164":"Sterile Environment",
+      "167":"Self Care",
+      "168":"Rehabilitation",
+      "169":"Other"
+   },
+   "17x":{  
+      "Description":"Nursery",
+      "170":"Newborn (well baby)",
+      "171":"Newborn-level I:  Routine",
+      "172":"Newborn-level II: Low-birth weight",
+      "173":"Newborn-level III: Sick baby",
+      "174":"Newborn-level IV: Severly ill baby/ICU",
+      "179":"Boarder baby"
+   },
+   "18x":{  
+      "Description":"Leave of Absence",
+      "180":"General",
+      "181":"Reserved",
+      "182":"Patient Convenience Charges Billable: Billable",
+      "183":"Therapeutic Leave: Billable",
+      "184":"ICF/MR-any reason: Billable",
+      "185":"Nursing Home (for hospitalization): Billable",
+      "189":"Other Leave of Absence"
+   },
+   "19x":{  
+      "Description":" Subacute care",
+      "190":"General Classification",
+      "191":"Subacute Care-level I: Skilled Care",
+      "192":"Subacute Care-level II: Comprehensive Care",
+      "193":"Subacute Care-level III: Complex: Care",
+      "194":"Subacute Care-level IV: Intenstive Care",
+      "199":"Other Subacute Care"
+   },
+   "20x":{  
+      "Description":"Intensive Care",
+      "200":"General",
+      "201":"Surgical",
+      "202":"Medical",
+      "203":"Pediatric",
+      "204":"Psychiatric",
+      "206":"Intermediate ICU",
+      "207":"Burn Care",
+      "208":"Trauma",
+      "209":"Other Intensive Care"
+   },
+   "21x":{  
+      "Description":"Coronary Care",
+      "210":"General",
+      "211":"Myocardial Infarction",
+      "212":"Pulmonary Care",
+      "213":"Heart Transplant",
+      "214":"Intermediate CCU",
+      "219":"Other Coronary Care"
+   },
+   "22x":{  
+      "Description":"Special Charges",
+      "220":"General",
+      "221":"Admission Charge",
+      "222":"Technical Support Charge",
+      "223":"U.R. Service Charge",
+      "224":"Medically Necessary Late Discharge",
+      "229":"Other Special Charges"
+   },
+   "23x":{  
+      "Description":"Incremental Nursing Care Rate",
+      "230":"General",
+      "231":"Nursery",
+      "232":"OB",
+      "233":"ICU",
+      "234":"CCU",
+      "235":"Hospice",
+      "239":"Other"
+   },
+   "24x":{  
+      "Description":"All Inclusive Ancillary",
+      "240":"General",
+      "249":"Other Inclusive Ancillary"
+   },
+   "25x":{  
+      "Description":"Pharmacy",
+      "250":"General",
+      "251":"Generic Drugs",
+      "252":"Non-generic Drugs",
+      "253":"Take Home Drugs",
+      "254":"Drugs incidental to other Diagnostic Services",
+      "255":"Drugs incidental to Radiology",
+      "256":"Experimental Drugs",
+      "257":"Non-prescription",
+      "258":"IV Solutions",
+      "259":"Other Pharmacy"
+   },
+   "26x":{  
+      "Description":"IV Therapy",
+      "260":"General",
+      "261":"Infusion Pump",
+      "262":"IV Therapy/Pharmacy Services",
+      "263":"IV Therapy/Drug/Supply Delivery",
+      "264":"IV Therapy/Supplies",
+      "269":"Other IV Therapy"
+   },
+   "27x":{  
+      "Description":"Medical/Surgical Supplies and Devices",
+      "270":"General",
+      "271":"Non-Sterile Supply",
+      "272":"Sterile Supply",
+      "273":"Take Home Supplies",
+      "274":"Prosthetic/Orthotic Devices",
+      "275":"Pace Maker",
+      "276":"Intraocular Lens",
+      "277":"Oxygen-Take Home",
+      "278":"Other Implants",
+      "279":"Other Supplies/Devices"
+   },
+   "28x":{  
+      "Description":"Oncology",
+      "280":"General",
+      "289":"Other Oncology"
+   },
+   "29x":{  
+      "Description":"Durable Medical Equipment (Other than Renal)",
+      "290":"General",
+      "291":"Rental",
+      "292":"Purchase of New DME",
+      "293":"Purchase of Used DME",
+      "294":"Supplies/Drug for DME Effectiveness",
+      "299":"Other Equipment"
+   },
+   "30x":{  
+      "Description":"Laboratory-Clinical",
+      "300":"General",
+      "301":"Chemistry",
+      "302":"Immunology",
+      "303":"Renal Patient (home)",
+      "304":"Non-routine Dialysis",
+      "305":"Hematology",
+      "306":"Bacteriology & Microbiology",
+      "307":"Urology",
+      "309":"Other Laboratory"
+   },
+   "31x":{  
+      "Description":"Laboratory Anatomical",
+      "310":"General",
+      "311":"Cytology",
+      "312":"Histology",
+      "314":"Biopsy",
+      "319":"Other"
+   },
+   "32x":{  
+      "Description":"Radiology-Diagnostic",
+      "320":"General",
+      "321":"Angiocardiography",
+      "322":"Arthrography",
+      "323":"Arteriography",
+      "324":"Chest X-ray",
+      "329":"Digital Subtraction Angiography"
+   },
+   "33x":{  
+      "Description":"Radiology-Therapeutic",
+      "330":"General",
+      "331":"Chemotherapy-injected",
+      "332":"Chemotherapy-oral",
+      "333":"Radiation Therapy",
+      "335":"Chemotherapy-IV",
+      "339":"Other"
+   },
+   "34x":{  
+      "Description":"Nuclear Medicine",
+      "340":"General",
+      "341":"Diagnostic",
+      "342":"Therapeutic",
+      "343":"Diagnostic Radiopharmaceuticals",
+      "344":"Therapeutic Radiopharmaceuticals",
+      "349":"Other"
+   },
+   "35x":{  
+      "Description":"CT Scan",
+      "350":"General",
+      "351":"Head Scan",
+      "352":"Body Scan",
+      "359":"Other CT Scans"
+   },
+   "36x":{  
+      "Description":"Operating Room Services",
+      "360":"General",
+      "361":"Minor Surgery",
+      "362":"Organ Transplant-Other Than Kidney",
+      "367":"Kidney Transplant",
+      "369":"Other Operating Room Services"
+   },
+   "37x":{  
+      "Description":"Anesthesia",
+      "370":"General",
+      "371":"Anesthesia incident to Radiology",
+      "372":"Anesthesia incident to Other Diagnostic Services",
+      "374":"Acupuncture",
+      "379":"Other Anesthesia"
+   },
+   "38x":{  
+      "Description":"Blood",
+      "380":"General",
+      "381":"Packed Red Cells",
+      "382":"Whole Blood",
+      "383":"Blood-Plasma",
+      "384":"Blood-Platelets",
+      "385":"Blood-Leucocytes",
+      "386":"Blood-Other Components",
+      "387":"Blood-Other Derivatives",
+      "389":"Other Blood"
+   },
+   "39x":{  
+      "Description":"Blood Storage and Processing",
+      "390":"General",
+      "391":"Blood Administration",
+      "399":"Other Blood Storage & Processing"
+   },
+   "40x":{  
+      "Description":"Other Imaging Services",
+      "400":"General",
+      "401":"Diagnostic Mammography",
+      "402":"Ultrasound",
+      "403":"Screening Mammography",
+      "404":"Positron Emission Tomography",
+      "409":"Other Imaging Services"
+   },
+   "41x":{  
+      "Description":"Respiratory Services",
+      "410":"General",
+      "412":"Inhalation Services",
+      "413":"Hyperbaric Oxygen Therapy",
+      "419":"Other Respiratory Services"
+   },
+   "42x":{  
+      "Description":"Physical Therapy",
+      "420":"General",
+      "421":"Visit Charge",
+      "422":"Hourly Charge",
+      "423":"Group Rate",
+      "424":"Evaluation or Re-evaluation",
+      "429":"Other Physical Therapy"
+   },
+   "43x":{  
+      "Description":"Occupational Therapy",
+      "430":"General",
+      "431":"Visit Charge",
+      "432":"Hourly Charge",
+      "433":"Group Rate",
+      "434":"Evaluation or Re-evaluation",
+      "439":"Other Occupational Therapy"
+   },
+   "44x":{  
+      "Description":"Speech-Language Pathology",
+      "440":"General",
+      "441":"Visit Charge",
+      "442":"Hourly Charge",
+      "443":"Group Rate",
+      "444":"Evaluation or Re-evaluation",
+      "449":"Other Speech-Language Pathology"
+   },
+   "45x":{  
+      "Description":"Emergency Room",
+      "450":"General",
+      "451":"EMTALA Emergency Medical Screening Services",
+      "452":"ER Beyond EMTALA Screening",
+      "456":"Urgent Care",
+      "459":"Other Emergency Room"
+   },
+   "46x":{  
+      "Description":"Pulmonary Function",
+      "460":"General",
+      "469":"Other Pulmonary Function"
+   },
+   "47x":{  
+      "Description":"Audiology",
+      "470":"General",
+      "471":"Diagnostic",
+      "472":"Treatment",
+      "479":"Other Audiology"
+   },
+   "48x":{  
+      "Description":"Cardiology",
+      "480":"General",
+      "481":"Cardiac Cath Lab",
+      "482":"Stress Test",
+      "483":"Echocardiology",
+      "489":"Other Cardiology"
+   },
+   "49x":{  
+      "Description":"Ambulatory Surgical Care",
+      "490":"Ambulatory Surgical Care",
+      "499":"Other Ambulatory Surgical Care"
+   },
+   "50x":{  
+      "Description":"Outpatient Services",
+      "500":"General",
+      "509":"Other Outpatient"
+   },
+   "51x":{  
+      "Description":"Clinic",
+      "510":"General",
+      "511":"Chronic Pain Center",
+      "512":"Dental Clinic",
+      "513":"Psychiatric",
+      "514":"OB-GYN",
+      "515":"Pediatric",
+      "516":"Urgent Care Clinic",
+      "517":"Family Practice Clinic",
+      "519":"Other Clinic"
+   },
+   "52x":{  
+      "Description":"Freestanding Clinic",
+      "520":"General",
+      "521":"Rural Health-Clinic",
+      "522":"Rural Health-Home",
+      "523":"Family Practice",
+      "526":"Urgent Care Clinic",
+      "529":"Other Freestanding Clinic"
+   },
+   "53x":{  
+      "Description":"Osteopathic Services",
+      "530":"General",
+      "531":"Osteopathic Therapy",
+      "539":"Other Osteopathic Services"
+   },
+   "54x":{  
+      "Description":"Ambulance",
+      "540":"General",
+      "541":"Supplies",
+      "542":"Medical Transport",
+      "543":"Heart Mobile",
+      "544":"Oxygen",
+      "545":"Air Ambulance",
+      "546":"NeoNatal",
+      "547":"Pharmacy",
+      "548":"Telephone Transmission EKG",
+      "549":"Other Ambulance"
+   },
+   "55x":{  
+      "Description":"Skilled Nursing (Home Health & CORFs only)",
+      "550":"General",
+      "551":"Visit Charge",
+      "552":"Hourly Charge",
+      "559":"Other Skilled Nursing"
+   },
+   "56x":{  
+      "Description":"Medical Social Services",
+      "560":"General",
+      "561":"Visit Charge",
+      "562":"Hourly Charge",
+      "569":"Other Medical Social Services"
+   },
+   "57x":{  
+      "Description":"Home Health Aide (Home Health)",
+      "570":"General",
+      "571":"Visit Charge",
+      "572":"Hourly Charge",
+      "579":"Other Home Health Aide"
+   },
+   "58x":{  
+      "Description":"Other Visits (Home Health)",
+      "580":"General",
+      "581":"Visit Charge",
+      "582":"Hourly Charge",
+      "583":"Dietician",
+      "589":"Other Home Health Visits"
+   },
+   "59x":{  
+      "Description":"Units of Service (Home Health)",
+      "590":"General",
+      "599":"Other Home Health Units"
+   },
+   "60x":{  
+      "Description":"Oxygen (Home Health)",
+      "600":"General",
+      "601":"Oxygen-State/Equip/Supply/Cont.",
+      "602":"Oxygen-State/Equip/Supply/Under 1 LPM",
+      "603":"Oxygen-State/Equip/Over 4 LPM",
+      "604":"Oxygen-Portable Add-on"
+   },
+   "61x":{  
+      "Description":"Magnetic Resonance Imaging (MRI)",
+      "610":"General",
+      "611":"Brain (including brain stem)",
+      "612":"Spinal Cord (including spine)",
+      "619":"Other MRI"
+   },
+   "62x":{  
+      "Description":"Medical/Surgical Supplies (Extension of Revenue 27x)",
+      "621":"Supplies Incidental to Radiology",
+      "622":"Supplies Incidental to Other Diagnostic Services",
+      "623":"Surgical Dressing",
+      "624":"FDA Investigational Devices"
+   },
+   "63x":{  
+      "Description":"Drugs Requiring Specific Identification",
+      "630":"General Classification",
+      "631":"Single Source Drug",
+      "632":"Multiple Source Drug",
+      "633":"Restrictive Prescription",
+      "634":"Erythropoietin (EPO) less than 10,000 units",
+      "635":"Erythropoietin (EPO) more than 10,000 units",
+      "636":"Drugs Requiring Detailed Coding"
+   },
+   "64x":{  
+      "Description":"Home IV Therapy Services",
+      "640":"General Classification",
+      "641":"Nonroutine Nursing, Central Line",
+      "642":"IV Site Care, Central Line",
+      "643":"IV Start/Change, Peripheral Line",
+      "644":"Nonroutine Nursing, Peripheral Line",
+      "645":"Training, Patient/Caregiver, Central Line",
+      "646":"Training, Disabled Patient, Central Line",
+      "647":"Training, Patient/Caregiver, Peripheral Line",
+      "648":"Training, Disabled Patient, Peripheral Line",
+      "649":"Other IV Therapy Services"
+   },
+   "65x":{  
+      "Description":"Hospice Services",
+      "650":"General",
+      "651":"Routine Home Care",
+      "652":"Continuous Home Care",
+      "655":"Inpatient Respite Care",
+      "656":"General Inpatient Care",
+      "657":"Physician Service",
+      "659":"Other Hospice"
+   },
+   "66x":{  
+      "Description":"Respite Care (HHA Only)",
+      "660":"General Classification",
+      "661":"Hourly Charge/Skilled Nursing",
+      "662":"Hourly Charge/Home Health Aide/Homemaker"
+   },
+   "67x":{  
+      "Description":"Outpatient Special Residence Charges",
+      "670":"General",
+      "671":"Hospital Based",
+      "672":"Contracted",
+      "679":"Other Special Residence Charges"
+   },
+   "70x":{  
+      "Description":"Cast Room",
+      "700":"General",
+      "709":"Other Cast Room"
+   },
+   "71x":{  
+      "Description":"Recovery Room",
+      "710":"General",
+      "719":"Other Recovery Room"
+   },
+   "72x":{  
+      "Description":"Labor Room/Delivery",
+      "720":"General",
+      "721":"Labor",
+      "722":"Delivery",
+      "723":"Circumcision",
+      "724":"Birthing Center",
+      "729":"False Labor"
+   },
+   "73x":{  
+      "Description":"EKG/ECG (Electrocardiogram)",
+      "730":"General",
+      "731":"Holter Monitor",
+      "732":"Telemetry",
+      "739":"Computerized EKG/ECG"
+   },
+   "74x":{  
+      "Description":"EEG (Electroencephalogram)",
+      "740":"General",
+      "741":"Electronystogmography",
+      "742":"Diagnostic Sleep Disorder",
+      "749":"Other EEG"
+   },
+   "75x":{  
+      "Description":"Gastro-Intestinal Services",
+      "750":"General",
+      "759":"Other Gastro-Intestinal"
+   },
+   "76x":{  
+      "Description":"Treatment/Observation Room",
+      "760":"General",
+      "761":"Treatment Room",
+      "762":"Observation Room",
+      "769":"Other Treatment Room"
+   },
+   "77x":{  
+      "Description":"Preventive Care Services",
+      "770":"General Classification",
+      "771":"Vaccine Administration",
+      "779":"Other"
+   },
+   "79x":{  
+      "Description":"Lithotripsy",
+      "790":"General",
+      "799":"Other Lithotripsy"
+   },
+   "80x":{  
+      "Description":"Renal Dialysis- Inpatient",
+      "800":"General",
+      "801":"Inpatient Hemodialysis",
+      "802":"Inpatient Peritoneal (Non-CAPD)",
+      "803":"Inpatient Continuous Ambulatory Peritoneal Dialysis (CAPD)",
+      "804":"Inpatient Continuous Cycling Peritoneal Dialysis",
+      "809":"Other Inpatient Dialysis"
+   },
+   "81x":{  
+      "Description":"Organ Acquisition",
+      "810":"General",
+      "811":"Living Donor",
+      "812":"Cadaver Donor",
+      "813":"Unknown Donor",
+      "814":"Unsuccessful Organ Search-Donor Bank Charges",
+      "819":"Other"
+   },
+   "82x":{  
+      "Description":"Hemodialysis- Outpatient or Home",
+      "820":"General",
+      "821":"Hemodialysis/Composite or Other Rate",
+      "822":"Home Supplies (Not used in Michigan)",
+      "823":"Home Equipment (Not used in Michigan)",
+      "824":"Maintenance/100% (Not used in Michigan)",
+      "825":"Support Services",
+      "829":"Other Outpatient Hemodialysis"
+   },
+   "83x":{  
+      "Description":"Peritoneal Dialysis- Outpatient or Home",
+      "830":"General",
+      "831":"Peritoneal/Composite or Other Rate",
+      "832":"Home Supplies (Not used in Michigan)",
+      "833":"Home Equipment (Not used in Michigan)",
+      "834":"Maintenance/100% (Not used in Michigan)",
+      "835":"Support Services",
+      "839":"Other Peritoneal Dialysis"
+   },
+   "84x":{  
+      "Description":"Continuous Ambulatory Peritoneal Dialysis (CAPD)- Outpatient/Home",
+      "840":"General",
+      "841":"CAPD/Composite or Other Rate",
+      "842":"Home Supplies (Not used in Michigan)",
+      "843":"Home Equipment (Not used in Michigan)",
+      "844":"Maintenance/100% (Not used in Michigan)",
+      "845":"Support Services",
+      "849":"Other Outpatient CAPD"
+   },
+   "85x":{  
+      "Description":"Continuous Cycling Peritoneal Dialysis (CCPD)- Outpatient or Home",
+      "850":"General",
+      "851":"CCPD/Composite or Other Rate",
+      "852":"Home Supplies (Not used in Michigan)",
+      "853":"Home Equipment (Not used in Michigan)",
+      "854":"Maintenance/100% (Not used in Michigan)",
+      "855":"Support Services",
+      "859":"Other CCPD"
+   },
+   "90x":{  
+      "Description":"Psychiatric/Psychological Treatments",
+      "900":"General",
+      "901":"Electroshock Treatment",
+      "902":"Milieu Therapy",
+      "903":"Play Therapy",
+      "904":"Activity Therapy",
+      "909":"Other"
+   },
+   "91x":{  
+      "Description":"Psychiatric/Psychological Services",
+      "910":"General",
+      "911":"Rehabilitation",
+      "912":"Partial Hospitalization",
+      "914":"Individual Therapy",
+      "915":"Group Therapy",
+      "916":"Family Therapy",
+      "917":"Bio Feedback",
+      "918":"Testing",
+      "919":"Other"
+   },
+   "92x":{  
+      "Description":"Other Diagnostic Services",
+      "920":"General",
+      "921":"Peripheral Vascular Lab",
+      "922":"Electromyelogram",
+      "923":"Pap Smear",
+      "924":"Allergy Test",
+      "925":"Pregnancy Test",
+      "929":"Other Diagnostic Services"
+   },
+   "94x":{  
+      "Description":"Other Therapeutic Services",
+      "940":"General",
+      "941":"Recreational Therapy",
+      "942":"Education/Training/Diabetes Education",
+      "943":"Cardiac Rehabilitation",
+      "944":"Clinic-O/P Drug Rehabilitation",
+      "945":"Clinic-O/P Alcohol Rehabilitation",
+      "946":"Complex: Medical Equipment-Routing",
+      "947":"Complex: Medical Equipment-Ancillary",
+      "949":"Psoriasis Treatment Center"
+   },
+   "95x":{  
+      "Description":"Other Therapeutic Services (Extension of 94x)",
+      "950":"Reserved",
+      "951":"Athletic Training",
+      "952":"Kinesiotherapy"
+   },
+   "96x":{  
+      "Description":"Prefessional Fees (Also See 97x: and 98x)",
+      "960":"General",
+      "961":"Psychiatric",
+      "962":"Opthalmology",
+      "963":"Anesthesiologist (MD)",
+      "964":"Anesthetist (CRNA)",
+      "969":"Midwife"
+   },
+   "97x":{  
+      "Description":"Professional Fees (Extension of 96x)",
+      "971":"Laboratory",
+      "972":"Radiology-Diagnostic",
+      "973":"Radiology-Therapeutic",
+      "974":"Radiology-Nuclear Medicine",
+      "975":"Operating Room",
+      "976":"Respiratory Therapy",
+      "977":"Physical Therapy",
+      "978":"Occupational Therapy",
+      "979":"Speech Pathology"
+   },
+   "98x":{  
+      "Description":"Professional Fees (Extension of 96x: and 97x)",
+      "981":"Emergency Room",
+      "982":"Outpatient Services",
+      "983":"Clinic",
+      "984":"Medical Social Services",
+      "985":"EKG",
+      "986":"EEG",
+      "987":"Hospital Visit",
+      "988":"Consultation",
+      "989":"Private Duty Nurse"
+   },
+   "99x":{  
+      "Description":"Patient Convenience Items",
+      "990":"General",
+      "991":"Cafeteria/Guest Tray",
+      "992":"Private Linen Service",
+      "993":"Telephone/Telegraph",
+      "994":"TV/Radio",
+      "995":"Non-Patient Room Rentals",
+      "996":"Late Discharge Charge",
+      "997":"Admission Kits",
+      "998":"Beauty Shop/Barber",
+      "999":"Other Patient Convenience Items"
+
+   }
+}

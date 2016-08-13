@@ -5,6 +5,9 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"regexp"
+	"strconv"
+	"strings"
 
 	"github.com/julienschmidt/httprouter"
 )
@@ -27,17 +30,24 @@ type OCRResponse struct {
 	} `json:"regions"`
 }
 
+type lineItem struct {
+	YCoordinate int
+	Code        int
+	Description string
+	Price       string
+}
+
 // BillSubmission is the user-submitted payload that contains a URL
 // to the uploaded image of the bill.
 type BillSubmission struct {
 	URL string `json:"url"`
 }
 
-// PostBill accepts an S3 URL and calls the MSFT OCR API. Route returns successful
+// PostBill accepts an image URL and calls the MSFT OCR API. Route returns successful
 // with a parsed invoice object.
 func PostBill(w http.ResponseWriter, r *http.Request, ps httprouter.Params) (*httpResponse, *httpError) {
 
-	// Grab the S3 URL from the request payload
+	// Grab the image URL from the request payload
 	var bill BillSubmission
 	err := decodeRequestPayload(r, &bill)
 	if err != nil {
@@ -70,5 +80,73 @@ func PostBill(w http.ResponseWriter, r *http.Request, ps httprouter.Params) (*ht
 		return nil, &httpError{Message: http.StatusText(http.StatusInternalServerError), StatusCode: http.StatusInternalServerError}
 	}
 
-	return &httpResponse{ContentType: "application/json", Payload: ocrResponse}, nil
+	// lineItems are stored with their Y coordinate as the map key
+	var lineItems []lineItem
+
+	codeRegex := regexp.MustCompile(`^\d{3}$`)
+	priceRegex := regexp.MustCompile(`\d+,?\d+\.\d{2}$`)
+
+	// Loop through each region, line, and word looking for codes
+	for _, region := range ocrResponse.Regions {
+		for _, line := range region.Lines {
+			for _, word := range line.Words {
+
+				// Found a code, create a new line item
+				if codeRegex.MatchString(word.Text) {
+					code, _ := strconv.Atoi(word.Text)
+					coordinates := strings.Split(word.BoundingBox, ",")
+					yCoordinate, _ := strconv.Atoi(coordinates[1])
+
+					lineItems = append(lineItems, lineItem{
+						YCoordinate: yCoordinate,
+						Code:        code,
+					})
+
+					// fmt.Println("Code: ", word.Text, " Path: ", region.BoundingBox, " ", line.BoundingBox, " ", word.BoundingBox)
+				}
+
+			}
+		}
+	}
+
+	// Loop through the regions and lines looking for fuzzy matches
+	// on Y-Coordinates in existing line items
+	for _, region := range ocrResponse.Regions {
+		for _, line := range region.Lines {
+
+			// Grab the Y-Coordinate to look for a match
+			coordinates := strings.Split(line.BoundingBox, ",")
+			yCoordinate, _ := strconv.Atoi(coordinates[1])
+
+			// Loop through existing line items found via the code regex
+			for k, lineItem := range lineItems {
+
+				diff := lineItem.YCoordinate - yCoordinate
+				if diff < 0 {
+					diff = -diff
+				}
+
+				// If the Y-Coordinate is within a given threshold, the we have a hit!
+				if diff < 10 {
+
+					// Classify each word in the line and add it to the line item
+					for _, word := range line.Words {
+
+						if priceRegex.MatchString(word.Text) {
+
+							// price, _ := strconv.ParseFloat(word.Text, 10)
+							lineItems[k].Price = word.Text
+
+						} else if !codeRegex.MatchString(word.Text) {
+							lineItems[k].Description += word.Text
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// fmt.Printf("\n\n%+v\n\n", lineItems)
+
+	return &httpResponse{ContentType: "application/json", Payload: lineItems}, nil
 }

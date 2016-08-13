@@ -31,10 +31,12 @@ type OCRResponse struct {
 }
 
 type lineItem struct {
-	YCoordinate int
-	Code        int
-	Description string
-	Price       string
+	YCoordinate         int
+	Code                int
+	ProvidedDescription string
+	CategoryDescription string
+	ItemDescription     string
+	Price               string
 }
 
 // BillSubmission is the user-submitted payload that contains a URL
@@ -97,10 +99,22 @@ func PostBill(w http.ResponseWriter, r *http.Request, ps httprouter.Params) (*ht
 					coordinates := strings.Split(word.BoundingBox, ",")
 					yCoordinate, _ := strconv.Atoi(coordinates[1])
 
-					lineItems = append(lineItems, lineItem{
-						YCoordinate: yCoordinate,
-						Code:        code,
-					})
+					for category, subcategories := range codeDB {
+
+						if strings.HasPrefix(word.Text, category) {
+							subcategory, ok := subcategories[word.Text]
+							if ok {
+
+								lineItems = append(lineItems, lineItem{
+									YCoordinate:         yCoordinate,
+									Code:                code,
+									CategoryDescription: subcategories["Description"],
+									ItemDescription:     subcategory,
+								})
+
+							}
+						}
+					}
 
 					// fmt.Println("Code: ", word.Text, " Path: ", region.BoundingBox, " ", line.BoundingBox, " ", word.BoundingBox)
 				}
@@ -138,7 +152,7 @@ func PostBill(w http.ResponseWriter, r *http.Request, ps httprouter.Params) (*ht
 							lineItems[k].Price = word.Text
 
 						} else if !codeRegex.MatchString(word.Text) {
-							lineItems[k].Description += word.Text
+							lineItems[k].ProvidedDescription += word.Text
 						}
 					}
 				}

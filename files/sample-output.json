@@ -1,0 +1,162 @@
+[
+  {
+    "YCoordinate": 1255,
+    "Code": 121,
+    "ProvidedDescription": "Med-Sur-Gy/2Bed",
+    "CategoryDescription": "Room and Board-Semi-Private Two Bed (Medical or General)",
+    "ItemDescription": "Medical/Surgical/Gyn",
+    "Price": "3,552.00"
+  },
+  {
+    "YCoordinate": 1304,
+    "Code": 251,
+    "ProvidedDescription": "Drugs/Generic",
+    "CategoryDescription": "Pharmacy",
+    "ItemDescription": "Generic Drugs",
+    "Price": "332.75"
+  },
+  {
+    "YCoordinate": 1355,
+    "Code": 252,
+    "ProvidedDescription": "Drugs/Nongeneric",
+    "CategoryDescription": "Pharmacy",
+    "ItemDescription": "Non-generic Drugs",
+    "Price": "493.15"
+  },
+  {
+    "YCoordinate": 1405,
+    "Code": 255,
+    "ProvidedDescription": "Drugs/IncidentRad.",
+    "CategoryDescription": "Pharmacy",
+    "ItemDescription": "Drugs incidental to Radiology",
+    "Price": "420.00"
+  },
+  {
+    "YCoordinate": 1454,
+    "Code": 258,
+    "ProvidedDescription": "PharmacyIVSolutions",
+    "CategoryDescription": "Pharmacy",
+    "ItemDescription": "IV Solutions",
+    "Price": "728.90"
+  },
+  {
+    "YCoordinate": 1504,
+    "Code": 260,
+    "ProvidedDescription": "IVTherapy",
+    "CategoryDescription": "IV Therapy",
+    "ItemDescription": "General",
+    "Price": "1,393.10"
+  },
+  {
+    "YCoordinate": 1554,
+    "Code": 272,
+    "ProvidedDescription": "SterileSupply",
+    "CategoryDescription": "Medical/Surgical Supplies and Devices",
+    "ItemDescription": "Sterile Supply",
+    "Price": "777.00"
+  },
+  {
+    "YCoordinate": 1604,
+    "Code": 300,
+    "ProvidedDescription": "Laboratory",
+    "CategoryDescription": "Laboratory-Clinical",
+    "ItemDescription": "General",
+    "Price": "3,700.90"
+  },
+  {
+    "YCoordinate": 1654,
+    "Code": 320,
+    "ProvidedDescription": "Diagnostic,Radiology",
+    "CategoryDescription": "Radiology-Diagnostic",
+    "ItemDescription": "General",
+    "Price": "136.90"
+  },
+  {
+    "YCoordinate": 1704,
+    "Code": 352,
+    "ProvidedDescription": "CTScan/Body",
+    "CategoryDescription": "CT Scan",
+    "ItemDescription": "Body Scan",
+    "Price": "3,200.20"
+  },
+  {
+    "YCoordinate": 1754,
+    "Code": 410,
+    "ProvidedDescription": "RespiratoryTherapy",
+    "CategoryDescription": "Respiratory Services",
+    "ItemDescription": "General",
+    "Price": "1,101.20"
+  },
+  {
+    "YCoordinate": 1805,
+    "Code": 420,
+    "ProvidedDescription": "PhysicalTherapy",
+    "CategoryDescription": "Physical Therapy",
+    "ItemDescription": "General",
+    "Price": "369.20"
+  },
+  {
+    "YCoordinate": 1855,
+    "Code": 430,
+    "ProvidedDescription": "OccupationalTherapy",
+    "CategoryDescription": "Occupational Therapy",
+    "ItemDescription": "General",
+    "Price": "285.00"
+  },
+  {
+    "YCoordinate": 1905,
+    "Code": 450,
+    "ProvidedDescription": "EmergencyRoom",
+    "CategoryDescription": "Emergency Room",
+    "ItemDescription": "General",
+    "Price": "964.00"
+  },
+  {
+    "YCoordinate": 1955,
+    "Code": 460,
+    "ProvidedDescription": "PulmonaryFunction",
+    "CategoryDescription": "Pulmonary Function",
+    "ItemDescription": "General",
+    "Price": "44.20"
+  },
+  {
+    "YCoordinate": 2005,
+    "Code": 483,
+    "ProvidedDescription": "ECHOCARDIOGRAPHY",
+    "CategoryDescription": "Cardiology",
+    "ItemDescription": "Echocardiology",
+    "Price": "1,078.40"
+  },
+  {
+    "YCoordinate": 2055,
+    "Code": 636,
+    "ProvidedDescription": "Drugs/DetailCode",
+    "CategoryDescription": "Drugs Requiring Specific Identification",
+    "ItemDescription": "Drugs Requiring Detailed Coding",
+    "Price": "382.55"
+  },
+  {
+    "YCoordinate": 2153,
+    "Code": 730,
+    "ProvidedDescription": "EKG/ECG",
+    "CategoryDescription": "EKG/ECG (Electrocardiogram)",
+    "ItemDescription": "General",
+    "Price": "315.00"
+  },
+  {
+    "YCoordinate": 2203,
+    "Code": 771,
+    "ProvidedDescription": "VACCINEADMINISTRATION",
+    "CategoryDescription": "Preventive Care Services",
+    "ItemDescription": "Vaccine Administration",
+    "Price": "43.00"
+  },
+  {
+    "YCoordinate": 2254,
+    "Code": 921,
+    "ProvidedDescription": "PERIPHERALVASCULARLAB",
+    "CategoryDescription": "Other Diagnostic Services",
+    "ItemDescription": "Peripheral Vascular Lab",
+    "Price": "998.90"
+  }
+]

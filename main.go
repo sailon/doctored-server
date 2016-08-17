@@ -27,11 +27,13 @@ var (
 	}
 
 	apiKey string
+	port   string
 	codeDB map[string]map[string]string
 )
 
 func init() {
 	flag.StringVar(&apiKey, "api-key", "", "The Microsoft Cognitive Services API key.")
+	flag.StringVar(&port, "port", ":8090", "The REST API Port. Defaults to :8090")
 }
 
 func main() {
@@ -58,6 +60,6 @@ func main() {
 		log.Println("parsing code database file", err.Error())
 	}
 
-	log.Printf("Listening on port %s", "8090")
-	log.Fatal(http.ListenAndServe(":8090", router))
+	log.Printf("Listening on port %s", port)
+	log.Fatal(http.ListenAndServe(port, router))
 }

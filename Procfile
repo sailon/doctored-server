@@ -1,1 +1,1 @@
-web: doctored-server -api-key $API_KEY
+web: doctored-server -api-key $API_KEY -port $PORT

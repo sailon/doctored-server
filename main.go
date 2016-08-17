@@ -33,12 +33,15 @@ var (
 
 func init() {
 	flag.StringVar(&apiKey, "api-key", "", "The Microsoft Cognitive Services API key.")
-	flag.StringVar(&port, "port", ":8090", "The REST API Port. Defaults to :8090")
+	flag.StringVar(&port, "port", "8090", "The REST API Port. Defaults to :8090")
 }
 
 func main() {
 
 	flag.Parse()
+
+	// Add necessary colon for HTTP listner
+	port = ":" + port
 
 	if apiKey == "" {
 		log.Fatal("API Key not provided")
